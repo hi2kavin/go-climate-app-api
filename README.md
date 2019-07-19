@@ -19,6 +19,9 @@
             <li>
                 Send mail to the users and other about password verification and send weather details pdf
             </li>
+            <li>
+               Maintains mail History
+            </li>
         </ul>
     </li>
 </ul>
