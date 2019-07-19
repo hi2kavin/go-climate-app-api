@@ -125,7 +125,7 @@ func mailOther(w http.ResponseWriter,r *http.Request){
 func emailPdfOther(city string,email string,name string,subject string,message string){
 
 	name=createPdf(city,name)
-	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "fakemail4rj@gmail.com", "beMyLove", "smtp.gmail.com"))
+	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "mail@gmail.com", "password", "smtp.gmail.com"))
 	fmt.Println("sending mail to ",email)
 	mail.To(email)
 	mail.From("fakemal4rj@gmail.com")
@@ -143,7 +143,7 @@ func emailPdfOther(city string,email string,name string,subject string,message s
 func mailPassword(email string,password string){
 
 
-	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "fakemail4rj@gmail.com", "beMyLove", "smtp.gmail.com"))
+	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "mail@gmail.com", "password", "smtp.gmail.com"))
 	fmt.Println("sending mail to ",email)
 	mail.To(email)
 	mail.From("oops@itsallbroken.com")
@@ -161,7 +161,7 @@ func mailPassword(email string,password string){
 func emailPdf(city string,email string,name string){
 
 	name=createPdf(city,name)
-	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "fakemail4rj@gmail.com", "beMyLove", "smtp.gmail.com"))
+	mail := mailyak.New("smtp.gmail.com:587", smtp.PlainAuth("", "mail@gmail.com", "password", "smtp.gmail.com"))
 	fmt.Println("sending mail to ",email)
 	mail.To(email)
 	mail.From("oops@itsallbroken.com")
